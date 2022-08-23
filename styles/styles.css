@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://img.freepik.com/fotos-premium/pizza-salchichones-sabrosa-fondo-concreto-negro_79782-102.jpg?w=2000");
+    background-size: cover;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "cosas"
+    "varios"
+    "oferton"
+    "categorias"
+    "footer";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 100px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+header {
+    grid-area: header;
+    background-color: #1A1A1A;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 200px;
+}
+
+section#oferton {
+    grid-area: oferton;
+    margin-top: 200px;
+}
+
+section#categorias {
+    grid-area: categorias;
+    padding-bottom: 400px;
+}
+
+section#cosas {
+    grid-area: cosas;
+}
+
+section#varios {
+    grid-area: varios;
+    margin-top: 100px;
+}
+
+.tituloPrincipal {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    height: 200px;
+    margin-left: 25px;
+}
+
+.barraNav {
+    display: none;
+}
+
+.barraNav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barraNav ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.barraNav ul li a {
+    color: rgb(226, 30, 30);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s;
+}
+
+.barraNav ul li a:hover{
+    color: rgb(157, 157, 159);
+}
+
+.imagenFondo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.imagenMuzza {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    transition: all 1s ease-in-out;
+}
+
+.imagenMuzza:hover{
+    width: 320px;
+    height: 320px;
+} 
+
+.imagenNapo {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+
+.imagenNapo:hover {
+    width: 320px;
+    height: 320px;
+}
+
+.imagenJamon {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+
+.imagenJamon:hover {
+    width: 320px;
+    height: 320px;
+}
+
+.imagenVeggie {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+
+.imagenVeggie:hover {
+    width: 320px;
+    height: 320px;
+}
+
+.somosMamucha {
+    border: solid rgb(255, 91, 91);
+    font-size: 50px;
+    text-align: justify;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    background-color: rgb(175, 175, 175);
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.promos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    background-color: rgb(175, 175, 175);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 200px;
+}
+
+.promos span a{
+    text-decoration: none;
+    color: rgb(226, 30, 30);
+}
+
+.secciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    padding-bottom: 200px;
+}
+
+.sucursales {
+    display: inline-block;
+    background-color: rgb(175, 175, 175);
+    height: 300px;
+    width: 300px;
+    align-content: center;
+}
+
+.productos {
+    display: inline-block;
+    background-color: rgb(175, 175, 175);
+    height: 300px;
+    width: 300px;
+}
+
+.opinion {
+    display: inline-block;
+    background-color: rgb(175, 175, 175);
+    height: 300px;
+    width: 300px;
+}
+
+.secciones div a{
+    text-decoration: none;
+    color: rgb(226, 30, 30);
+}
+
+footer { 
+    background-color: #1A1A1A;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(226, 30, 30);
+    margin-left: 20px;
+}
+
+.disclaimer {
+    color: rgb(222, 224, 225);
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px 20px 0px 0px;
+}
+
+.logofooter {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 150px;
+    padding-left: 15%;
+}
+
+.locales {
+    display: inline-block;
+    background-color: rgb(175, 175, 175);
+    height: 300px;
+    width: 300px;
+    background-image: url(https://img.freepik.com/vector-premium/icono-punto-alfiler-simbolo-puntero-ubicacion-mapa-rojo-aislado-sobre-fondo-blanco_120819-234.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.promociones {
+    display: inline-block;
+    background-color: rgb(175, 175, 175);
+    height: 300px;
+    width: 300px;
+    background-image: url(https://img.freepik.com/vector-premium/ilustracion-icono-vector-dibujos-animados-pizza-refresco-concepto-icono-comida-bebida-aislado-vector-premium-estilo-dibujos-animados-plana_138676-3585.jpg?w=360);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(0px, 100px);
+}
+
+.encuesta{
+    margin: 100px;
+    padding: 100px;
+    background-color: rgb(175, 175, 175);
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 599px) and (orientaton: landscape){
+    #grilla {
+        grid-template-rows: 3fr 1fr 1fr 1fr 1fr 2fr;
+    }
+}
+
+
+
+/* Diseño para tablet */
+
+
+@media screen and (min-width: 600px) {}
+
+/* Fin diseño tablet */
+
+/* Diseño desktop */
+
+@media screen and (min-width: 1200px) {
+    #grilla{
+        grid-template-areas: 
+        "header header header"
+        "cosas cosas cosas"
+        "varios varios varios"
+        "oferton oferton oferton"
+        "categorias categorias categorias"
+        "footer footer footer";
+        grid-template-rows: 200px 200px 200px 1fr 200px 100px;
+        grid-template-columns: 30% auto 10px;
+        row-gap: 100px;
+    }
+
+    .barraNav {
+        display: flex;
+    }
+}
+
+/* Fin diseño desktop */
