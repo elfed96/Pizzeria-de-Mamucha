@@ -62,15 +62,16 @@ section#varios {
 
 .tituloPrincipal {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 200px;
     height: 200px;
     margin-left: 25px;
 }
 
-.barraNav {
+ .barraNav {
     display: none;
-}
+ }
+    
 
 .barraNav ul {
     display: flex;
@@ -96,6 +97,17 @@ section#varios {
 .barraNav ul li a:hover{
     color: rgb(157, 157, 159);
 }
+
+.botonHamburger{
+    background-color: rgb(226, 30, 30);
+    color: #1A1A1A;
+}
+
+.pizzaCarrusel{
+    height: 500px;
+    width: 500px;
+}
+
 
 .imagenFondo {
     display: flex;

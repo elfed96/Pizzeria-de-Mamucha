@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/favicon2.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +15,35 @@
     
 </head>
 <body>
-    <header class="header"> 
-        <p class="tituloPrincipal"> <img src="../images/logo pizzeria.png" alt="Logo de Pizzeria de Mamucha"></p>
-        <nav class="barraNav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./sucursales.html">Sucursales</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./promos.html">Promos</a></li>
-                <li><a href="./opinion.html">Opinion</a></li>
-            </ul>
-        </nav>
+    <header class="header container-fluid">
+        <div class="row">
+        <p class="tituloPrincipal col-xs-6 col-md-4"> <img src="../images/logo pizzeria.png" alt="Logo de Pizzeria de Mamucha"></p>
+            <nav class="navbar navbar-expand-lg col-xs-6 col-md-8">
+                <div class="container-fluid">
+            <button class="navbar-toggler botonHamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse barraNav" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../index.html">Home</a>                    </li>
+                    <li class="nav-item">
+                        <a href="./sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./promos.html">Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./opinion.html">Opinion</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section class="imagenFondo">    
@@ -51,5 +71,7 @@
         <p class="logofooter"> <img src="../images/logo pizzeria.png" alt="Logo Pizzeria de Mamucha"></p>
         <p class="disclaimer">Diseñado por Federico Javier Alberti. Todos los derechos reservadosⒸ</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
