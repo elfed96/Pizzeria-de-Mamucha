@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://img.freepik.com/fotos-premium/pizza-salchichones-sabrosa-fondo-concreto-negro_79782-102.jpg?w=2000");
+    background-size: cover;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "cosas"
+    "varios"
+    "oferton"
+    "categorias"
+    "footer";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 100px;
+}
+
+#grilla2 {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sucursales"
+    "footer";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 100px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+
+.barraNav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li{
+        margin: 10px;
+        padding: 10px;
+        a{
+            color: rgb(226, 30, 30);
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: color 1s;
+            &:hover {
+                color: $BarranavHover;
+            }
+        }
+    }
+}
+
+.tituloPrincipal {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    height: 200px;
+    margin-left: 25px;
+}
+
+header {
+    grid-area: header;
+    background-color: #1A1A1A;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Empieza hacia abajo, medida para tablet/celular */
+
+
+@media screen and (max-width: 768px) {
+    .barraNav {
+        display: none;
+    }
+}
