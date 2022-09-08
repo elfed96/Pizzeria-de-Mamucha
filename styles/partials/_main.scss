@@ -1,0 +1,45 @@
+.secciones {
+    @extend %seccionesMain
+}
+
+.sucursales {
+    @extend %seccionesPages
+  }
+  
+.productos {
+    @extend %seccionesPages
+}
+  
+.opinion {
+    @extend %seccionesPages;
+    color: rgb(34, 34, 34);
+}
+  
+.secciones div a {
+    text-decoration: none;
+    color: rgb(226, 30, 30);
+}
+
+.somosMamucha {
+    @include somosMamucha(rgb(175, 175, 175), rgb(24, 24, 24), rgb(255, 91, 91))
+}
+
+.promos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    background-color: rgb(175, 175, 175);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 200px;
+  }
+
+.promos span a {
+    text-decoration: none;
+    color: rgb(226, 30, 30);
+  }
